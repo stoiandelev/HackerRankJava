@@ -1,3 +1,3 @@
-# HackerRankJava
+# This is task from hackerRank for Java!
 
-# This is task from hacker rank for Java
+#Enjoy :)
