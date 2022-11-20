@@ -20,13 +20,13 @@ import java.util.*;
  * No two students have the same ID.
  */
 
-class Student implements Comparable<Student> {
+class Student1 implements Comparable<Student1> {
 
     private int id;
     private String firstName;
     private double cgpa;
 
-    public Student(int id, String firstName, double cgpa) {
+    public Student1(int id, String firstName, double cgpa) {
         this.id = id;
         this.firstName = firstName;
         this.cgpa = cgpa;
@@ -53,10 +53,10 @@ class Student implements Comparable<Student> {
      * No two students have the same ID.
      */
     @Override
-    public int compareTo(Student anotherStudent) {
-        return Comparator.comparingDouble(Student::getCgpa).reversed()
-                .thenComparing(Student::getFirstName)
-                .thenComparing(Student::getId)
+    public int compareTo(Student1 anotherStudent) {
+        return Comparator.comparingDouble(Student1::getCgpa).reversed()
+                .thenComparing(Student1::getFirstName)
+                .thenComparing(Student1::getId)
                 .compare(this, anotherStudent);
     }
 
@@ -66,7 +66,7 @@ public class Task33_Comparable {
 
     public static void main(String[] args) {
 
-        List<Student> studentList = new ArrayList<>();
+        List<Student1> studentList = new ArrayList<>();
 
         try (Scanner scanner = new Scanner(System.in)) {
             int testCases = Integer.parseInt(scanner.nextLine());
@@ -76,7 +76,7 @@ public class Task33_Comparable {
                 String firstName = scanner.next();
                 double cgpa = scanner.nextDouble();
 
-                Student student = new Student(id, firstName, cgpa);
+                Student1 student = new Student1(id, firstName, cgpa);
                 studentList.add(student);
 
                 testCases--;
