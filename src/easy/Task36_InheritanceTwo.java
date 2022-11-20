@@ -3,7 +3,7 @@ package easy;
 public class Task36_InheritanceTwo {
 
     public static void main(String[] args) {
-        Add add = new Add();
+        Add1 add = new Add1();
         System.out.println("My superclass is: " + add.getClass().getSuperclass().getName());
         int first = add.add(30, 12);
         int second = add.add(11, 2);
@@ -22,7 +22,7 @@ class Arithmetic {
     }
 }
 
-class Add extends Arithmetic {
+class Add1 extends Arithmetic {
     @Override
     int add(int numberOne, int numberTow) {
         return super.add(numberOne, numberTow);
