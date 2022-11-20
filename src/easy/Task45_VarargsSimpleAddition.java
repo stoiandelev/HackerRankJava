@@ -6,10 +6,9 @@ import java.lang.reflect.Method;
 import java.util.HashSet;
 import java.util.Set;
 
-public class VarargsSimpleAddition {
+public class Task45_VarargsSimpleAddition {
 
     public static void main(String[] args) {
-
         try {
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             int number1 = Integer.parseInt(br.readLine());

@@ -11,7 +11,8 @@ public class Task46_Reflection {
         //!Student std=new Student();
         //! uses class literal, not a function.
         Class std = Student.class;
-        //Student std=new Student();  //Class Student=new Student().getClass();
+        //Student std=new Student();
+        // Class Student=new Student().getClass();
         Method[] mtd = std.getDeclaredMethods();
 
         ArrayList<String> methodNames = new ArrayList<>();
